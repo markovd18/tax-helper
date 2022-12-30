@@ -1,0 +1,4 @@
+**/dist
+**/generated
+**/.git
+**/node_module
