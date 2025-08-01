@@ -1,7 +1,9 @@
 {
+  "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/refs/heads/master/src/schemas/json/package.json",
   "name": "tax-helper",
   "private": true,
   "version": "0.0.1",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "pnpm build:types && pnpm build:js",
