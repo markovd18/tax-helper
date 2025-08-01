@@ -6,7 +6,5 @@ export const Select = (props: PropsWithChildren<Props>) => {
 }
 
 export const SelectItem = () => {
-  return (
-    <option></option>
-  )
+  return <option></option>
 }
