@@ -1,3 +1,5 @@
-export const Spacer = ({ size }: { size: number }) => {
-  return <span style={{ display: "block", width: size, height: size, maxWidth: size, maxHeight: size }} />
+import { ComponentPropsWithRef } from "react"
+
+export function Spacer(props: Omit<ComponentPropsWithRef<"span">, "children">) {
+  return <span {...props} />
 }
