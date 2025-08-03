@@ -1,10 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TAX Helper</title>
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      document.documentElement.classList.toggle(
+        "dark",
+        localStorage["tax-helper-theme"] === "dark" ||
+          (!("tax-helper-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
+      )
+    </script>
   </head>
   <body>
     <div id="root"></div>
