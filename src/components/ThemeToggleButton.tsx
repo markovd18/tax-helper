@@ -39,7 +39,7 @@ export function ThemeToggleButton() {
   }
 
   return (
-    <Button variant="secondary" size="icon" className="fixed bottom-2 right-2" onClick={handleToggle}>
+    <Button variant="secondary" size="icon" className="fixed bottom-2 right-2 shadow-lg border" onClick={handleToggle}>
       <NextThemeIcon />
     </Button>
   )

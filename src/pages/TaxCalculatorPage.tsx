@@ -106,8 +106,6 @@ export function TaxCalculatorPage() {
             </Table>
           </form>
         </div>
-
-        <ThemeToggleButton />
       </PageContainer>
       <footer className="bg-sidebar-accent border-t lg:absolute bottom-0 left-0 right-0">
         <PageContainer>
@@ -129,6 +127,8 @@ export function TaxCalculatorPage() {
           </div>
         </PageContainer>
       </footer>
+
+      <ThemeToggleButton />
     </main>
   )
 }
